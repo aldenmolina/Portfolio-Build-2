@@ -1,0 +1,55 @@
+/* Carousel */
+.carousel {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.carousel-track {
+    height: 100%;
+    background: orange;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-card {
+    background: url(../img/welcome.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-button-left {
+    left: 2rem;
+    z-index: 1;
+}
+
+.carousel-button-right {
+    right: 2rem;
+    z-index: 1;
+}
+
+.carousel-button i {
+    font-size: 3rem;
+    color: rgba(255,0,0,0.7);
+    transition: 0.3s ease;
+}
+
+.carousel-button i:hover {
+    color: red;
+    transition: 0.3s ease;
+}
