@@ -19,27 +19,44 @@
 <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body>
+<body> 
+
     <!--Carousel-->
-    <div id="carousel">
+<div id="carousel">
         <button class="carousel-button carousel-button-left is-hidden">
             <i class="fas fa-angle-left"></i>
         </button>
         <div class="carousel-container">
             <ul class="carousel-track">
-                <li class="carousel-card current-card welcome-card">
+                <li class="carousel-card current-card">
+                    <img class="carousel-image" src="img/welcome.jpg" alt="Portfolio Project">
                 </li>
-                <li class="carousel-card about-card">
+                <li class="carousel-card">
+                    <img class="carousel-image" src="img/background.jpg" alt="Python Web Crawler">
                 </li>
-                <li class="carousel-card portfolio-card">
+                <li class="carousel-card">
+                    <img class="carousel-image" src="img/background1.png" alt="Virtual Pets Amok">
                 </li>
-                <li class="carousel-card contact-card"></li>
             </ul>
         </div>
         <button class="carousel-button carousel-button-right">
             <i class="fas fa-angle-right"></i>
         </button>
+        <div class="carousel-nav">
+            <button class="carousel-indicator current-card">
+            </button>
+            <button class="carousel-indicator">
+            </button>
+            <button class="carousel-indicator">
+            </button>
+        </div>
     </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
 </body>
 
 </html>
